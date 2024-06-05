@@ -18,4 +18,6 @@ print(list3)
 print(list1)
 print(list2)
 
+print(len(list3))
+
 
