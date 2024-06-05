@@ -1,0 +1,47 @@
+#DEFAULT ARGUMENTS
+# def show(a="hisham", b=22):
+#     print(a,"is",b,"years old")
+
+# show(a="fithu")
+# """--------------------------------"""
+
+
+# """KEYWORD ARGUMENTS"""
+# def message(fname, lname):
+#     print("Hello", fname, lname)
+
+# message(lname="dulfacker", fname="hisham")
+# message(fname="izaan", lname="izu")
+
+
+# """POSITIONAL ARGUEMNTS"""
+# def display(a, b):
+#     print("hello this is", a, "and he likes the number", b)
+
+# display("hisham", 5)
+# display("hish", 44, 3)
+
+"""Variable length arguments"""
+#Arbitrary positional arguments
+
+def mark(*score):
+    for i in score:
+        print("hisham scored", i, "marks")
+
+mark(5, 4, 66, 80)
+
+#Arbitrary keyword arguments
+def name(**naam):
+    print(type(naam))
+    print("hello", naam["fname"], naam["mname"], naam["lname"])
+
+name(mname="hisham", lname="dulfacker", fname="muhammed")
+
+
+def calculate(**cal):
+    for sub in cal:
+        sub_name = sub
+        sub_marks = cal[sub]
+        print(sub_name, "=", sub_marks)
+
+calculate(english=97, science=96, math=100, physics=100)
