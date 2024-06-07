@@ -1,6 +1,8 @@
 fruits = ("banana", "apple", "mango", "grape", "apple")
 
 print(fruits)
+k = fruits.index("grape")
+print("index ->",k)
 
 
 #this is str
