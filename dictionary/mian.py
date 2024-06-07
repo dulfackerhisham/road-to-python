@@ -9,7 +9,7 @@ my_dict = {
 }
 
 # print(my_dict)
-# print(my_dict.items())
+print(my_dict.items())
 # print(my_dict.keys())
 # print(my_dict.values())
 
@@ -29,3 +29,7 @@ print(names)
 """creating dictionary with dict constructor"""
 food = dict(fruit = "mango", price = 55, location = "calicut")
 print(food)
+
+"""checking if a is present in dictionary"""
+if "list" in names:
+    print("the key is present in dictionary")
